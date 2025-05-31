@@ -1,0 +1,9 @@
+CONCATENATE(
+  "https://TU_USUARIO.github.io/recibos-parqueadero/recibo.html?",
+  "placa=", ENCODEURL([Placa]), "&",
+  "entrada=", ENCODEURL([Entrada]), "&",
+  "salida=", ENCODEURL([Salida]), "&",
+  "tipo=", ENCODEURL([TipoVehiculo]), "&",
+  "tarifa=", ENCODEURL([Tarifa]), "&",
+  "total=", ENCODEURL([Total])
+)
